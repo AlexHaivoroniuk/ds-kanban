@@ -10,7 +10,7 @@ https://docs.mongodb.com/manual/administration/install-community/
 
 #### Install project
 
-   git clone https://github.com/RidgeA/ds-kanban.git
-   cd ds-kanban
-   npm install
-   npm start
+    git clone https://github.com/RidgeA/ds-kanban.git
+    cd ds-kanban
+    npm install
+    npm start
