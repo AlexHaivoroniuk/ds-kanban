@@ -14,3 +14,7 @@ https://docs.mongodb.com/manual/administration/install-community/
     cd ds-kanban
     npm install
     npm start
+    
+#### Postman
+
+https://www.getpostman.com/collections/2cc134e5c1fba61cd4a9
