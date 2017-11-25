@@ -1,0 +1,766 @@
+{
+	"info": {
+		"name": "dev-savvy-kanban",
+		"_postman_id": "e077db09-7fa1-32da-5076-bf9b30c8c832",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"description": "",
+			"item": [
+				{
+					"name": "/users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/user/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59de63519441872dfd16184f"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/user/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Beaver 222\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59de63529441872dfd161850"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/user/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/user/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59de63529441872dfd161850"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Beaver\",\n\t\"email\" : \"beaver@mail.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Boards",
+			"description": "",
+			"item": [
+				{
+					"name": "/boards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/boards",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"boards"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/board/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59e1049dabc1957ef3b31b23"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"new board 2\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/board/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59e1051fc9bab1024b8c238d"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3000/board/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59e1051fc9bab1024b8c238d"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"new board\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/board",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lists",
+			"description": "",
+			"item": [
+				{
+					"name": "/board/:boardId/lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/board/:boardId/lists",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":boardId",
+								"lists"
+							],
+							"variable": [
+								{
+									"key": "boardId",
+									"value": "59e1049dabc1957ef3b31b23"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board/:boardId/list/:listId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/board/:boardId/list/:listId",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":boardId",
+								"list",
+								":listId"
+							],
+							"variable": [
+								{
+									"key": "boardId",
+									"value": "59e1049dabc1957ef3b31b23"
+								},
+								{
+									"key": "listId",
+									"value": "59e7ba748157f82e95f4d130"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board/:boardId/list/:listId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/board/:boardId/list/:listId",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":boardId",
+								"list",
+								":listId"
+							],
+							"variable": [
+								{
+									"key": "boardId",
+									"value": "59e1049dabc1957ef3b31b23"
+								},
+								{
+									"key": "listId",
+									"value": "59e7b7a0c08fcd1fe4ef5f10"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board/:boardId/list/:listId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/board/:boardId/list/:listId",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":boardId",
+								"list",
+								":listId"
+							],
+							"variable": [
+								{
+									"key": "boardId",
+									"value": "59e1049dabc1957ef3b31b23"
+								},
+								{
+									"key": "listId",
+									"value": "59e7b7a0c08fcd1fe4ef5f10"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/board/:boardId/lists",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Task list\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/board/:boardId/list",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"board",
+								":boardId",
+								"list"
+							],
+							"variable": [
+								{
+									"key": "boardId",
+									"value": "59e1049dabc1957ef3b31b23"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"description": "",
+			"item": [
+				{
+					"name": "/list/:listId/tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/list/:listId/tasks",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"list",
+								":listId",
+								"tasks"
+							],
+							"variable": [
+								{
+									"key": "listId",
+									"value": "59e7ba748157f82e95f4d130"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/list/:listId/task/:taskId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/list/:listId/task/:taskId",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"list",
+								":listId",
+								"task",
+								":taskId"
+							],
+							"variable": [
+								{
+									"key": "listId",
+									"value": "59e7ba748157f82e95f4d130",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "taskId",
+									"value": "59e900d466f97342b98bf597",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/list/:listId/task/:taskId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"attachments\" : [\"59f0e1ed6f3efee70dccb911\"]\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/list/:listId/task/:taskId",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"list",
+								":listId",
+								"task",
+								":taskId"
+							],
+							"variable": [
+								{
+									"key": "listId",
+									"value": "59e7ba748157f82e95f4d130",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "taskId",
+									"value": "59e900d466f97342b98bf597",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/list/:listId/task/:taskId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/list/:listId/task/:taskId",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"list",
+								":listId",
+								"task",
+								":taskId"
+							],
+							"variable": [
+								{
+									"key": "listId",
+									"value": "59e7ba748157f82e95f4d130"
+								},
+								{
+									"key": "taskId",
+									"value": "59e8ffa72a0b1a3ef7367bbe"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/list/:listId/task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"New task\",\n\t\"priority\" : 1,\n\t\"content\" : \"new task\",\n\t\"author\" : \"59de63519441872dfd16184e\",\n\t\"assignTo\" : [\"59de63519441872dfd16184f\", \"59de63529441872dfd161851\"]\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/list/:listId/task",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"list",
+								":listId",
+								"task"
+							],
+							"variable": [
+								{
+									"key": "listId",
+									"value": "59e7ba748157f82e95f4d130"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Attachments",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:3000/attachment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "attachment",
+									"description": "",
+									"type": "file",
+									"src": "Component.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/attachment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"attachment"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/attachment/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "attachment",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/attachment/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"attachment",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59f0e0c46f3efee70dccb8ca"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/attachment/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:3000/attachment/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"attachment",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "59f0e0c46f3efee70dccb8ca"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
